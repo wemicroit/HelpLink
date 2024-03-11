@@ -13,11 +13,20 @@ namespace WeMicroIt.HelpLink
     {
         public static void AddHelpLink(this IServiceCollection services, IConfiguration configuration)
         {
-            services.AddSingleton<IHelpLinkService, ConfigurationHelpLinkService>();
-            services.AddSingleton<IHelpLocalizationService, DefaultHelpLocalizationService>();
+            services.AddHelpLink<ConfigurationHelpLinkMapper, DefaultHelpLocalizationService>(configuration);
+        }
+        public static void AddHelpLink<T1>(this IServiceCollection services, IConfiguration configuration) where T1 : IHelpLinkMapper
+        {
+            services.AddHelpLink<T1, DefaultHelpLocalizationService>(configuration);
+        }
+        public static void AddHelpLink<T1, T2>(this IServiceCollection services, IConfiguration configuration) where T1 : IHelpLinkMapper where T2 : IHelpLocalizationService
+        {
+            services.AddSingleton(typeof(IHelpLinkMapper), typeof(T1));
+            services.AddSingleton(typeof(IHelpLocalizationService), typeof(T2));
             services.Configure<HelpLinkOptions>(configuration.GetSection("WeMicroIt:HelpLinks"));
 
         }
+
 
     }
 }

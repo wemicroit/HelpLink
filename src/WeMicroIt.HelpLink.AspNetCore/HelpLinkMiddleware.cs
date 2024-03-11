@@ -1,6 +1,9 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Options;
+using System;
 using System.Globalization;
+using System.Linq;
+using System.Threading.Tasks;
 using WeMicroIt.HelpLink.Abstractions;
 
 namespace WeMicroIt.HelpLink.AspNetCore
@@ -8,11 +11,11 @@ namespace WeMicroIt.HelpLink.AspNetCore
     public class HelpLinkMiddleware
     {
         private readonly RequestDelegate _next;
-        private readonly IHelpLinkService _helpLinkService;
+        private readonly IHelpLinkMapper _helpLinkService;
         private readonly IHelpLocalizationService _helpLocalizationService;
         public HelpLinkMiddleware(
             RequestDelegate next,
-            IHelpLinkService helpLinkService,
+            IHelpLinkMapper helpLinkService,
             IHelpLocalizationService helpLocalizationService)
         {
             if (next == null)

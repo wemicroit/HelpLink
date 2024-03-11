@@ -8,8 +8,8 @@ using System.Threading.Tasks;
 
 namespace WeMicroIt.HelpLink.Abstractions
 {
-    public interface IHelpLocalizationService
+    public interface IHelpLinkMapper
     {
-        Task<CultureInfo> GetHelpCultureAsync(CancellationToken cancellationToken = default);
+        Task<string> GetHelpIdAsync(string key, CultureInfo cultureInfo, CancellationToken cancellationToken = default);
     }
 }
