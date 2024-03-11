@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34622.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeMicroIt.HelpLink", "src\WeMicroIt.HelpLink\WeMicroIt.HelpLink.csproj", "{A6E9B237-5DA0-4707-98A2-09C9FD515165}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "examples", "examples", "{EF172BEB-FB9E-4E21-A90E-441751B746BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeMicroIt.HelpLink.Example", "examples\WeMicroIt.HelpLink.Example\WeMicroIt.HelpLink.Example.csproj", "{C51C5C5C-C302-45C2-BB5E-FFBB712935B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeMicroIt.HelpLink.AspNetCore", "src\WeMicroIt.HelpLink.AspNetCore\WeMicroIt.HelpLink.AspNetCore.csproj", "{9290F3F1-8D40-45A1-907C-0FB40A7E5C1B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeMicroIt.HelpLink.Abstractions", "src\WeMicroIt.HelpLink.Abstractions\WeMicroIt.HelpLink.Abstractions.csproj", "{07B133E5-177F-4FD9-B6D4-1D5569C066B2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A6E9B237-5DA0-4707-98A2-09C9FD515165}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6E9B237-5DA0-4707-98A2-09C9FD515165}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6E9B237-5DA0-4707-98A2-09C9FD515165}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6E9B237-5DA0-4707-98A2-09C9FD515165}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C51C5C5C-C302-45C2-BB5E-FFBB712935B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C51C5C5C-C302-45C2-BB5E-FFBB712935B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C51C5C5C-C302-45C2-BB5E-FFBB712935B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C51C5C5C-C302-45C2-BB5E-FFBB712935B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9290F3F1-8D40-45A1-907C-0FB40A7E5C1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9290F3F1-8D40-45A1-907C-0FB40A7E5C1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9290F3F1-8D40-45A1-907C-0FB40A7E5C1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9290F3F1-8D40-45A1-907C-0FB40A7E5C1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07B133E5-177F-4FD9-B6D4-1D5569C066B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07B133E5-177F-4FD9-B6D4-1D5569C066B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07B133E5-177F-4FD9-B6D4-1D5569C066B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07B133E5-177F-4FD9-B6D4-1D5569C066B2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C51C5C5C-C302-45C2-BB5E-FFBB712935B1} = {EF172BEB-FB9E-4E21-A90E-441751B746BC}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A931BA00-AC2D-4BA9-8494-EAC3B527E50C}
+	EndGlobalSection
+EndGlobal
